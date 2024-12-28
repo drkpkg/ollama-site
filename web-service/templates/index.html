@@ -1,0 +1,12 @@
+<textarea id="input-text" class="form-text question-text" placeholder="Type your question here"></textarea>
+<button id="submit" class="">Send</button>
+<hr>
+<div id="input-question" class="chat-question"></div>
+<div class="chat-response">
+    <button id="output-cancel" class="">Cancel</button>
+    <div id="output-response"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+<script type="text/javascript" src="{{ url_for('static', filename='javascript/index.js') }}"></script>

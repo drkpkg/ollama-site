@@ -1,0 +1,14 @@
+version: '3'
+services:
+  ollama:
+    image: ollama/ollama:rocm
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - "11434:11434"
+    devices:
+      - "/dev/kfd:/dev/kfd"
+      - "/dev/dri:/dev/dri"
+    restart: always
+volumes:
+  ollama:
